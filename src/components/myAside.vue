@@ -34,7 +34,7 @@
           <el-table-column > 
             <template v-slot="scope">
               <div style="display: flex; align-items: center;">
-                <el-avatar src="https://n.sinaimg.cn/sinacn19/720/w1920h1200/20181019/6e45-hmrasqs6468809.jpg" />
+                <el-avatar src=scope.row.imgUrl />
                 <span style="margin-left: 8px;">{{ scope.row.name }}</span>
               </div>
             </template>
