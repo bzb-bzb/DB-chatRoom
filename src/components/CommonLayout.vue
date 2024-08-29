@@ -96,7 +96,7 @@ import * as signalR from '@microsoft/signalr';
           console.error('Error while starting SignalR connection:', err);
       }
     },
-  beforeDestroy() {
+  beforeUnmount() {
       // 确保在组件销毁时断开连接
       if (this.connection) {
           this.connection.stop();
